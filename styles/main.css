@@ -14,7 +14,7 @@ body {
 }
 
 
-/*header*/
+/*main header*/
 @media screen and (min-width: 560px) {
   position: relative;
   border: none;
@@ -24,6 +24,10 @@ body {
 .name {
   color: #0097A7;
   font-size: 3.6rem;
+}
+.title {
+  color: #5C5C5C;
+  font-size: 2.2rem;
 }
 ul {
   font-family: helvetica;
@@ -45,29 +49,27 @@ li a {
   display: inline-block;
   text-align: left;
   width: 100%;
-  padding-bottom: 30px;
 }
-
+.brain {
+  margin-bottom: 20px;
+}
 a:link {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
 a:active {
   text-decoration: underline;
 }
 
-.title {
-  color: #5C5C5C;
-  font-size: 2.2rem;
-}
-
-
 p {
   font-size: 1.6rem;
+  float: none;
+  margin-left: 35%;
+  max width: 288px;
+  line-height: 200%;
+  margin-right: 20%;
 }
 
 .description {
@@ -82,7 +84,7 @@ p {
   font-size: 2.2rem;
   font-weight: bold;
 }
-.Cloud {
+.Cloud-storage {
   color: #0D47A1;
   font-weight: bold;
   font-size: 2.2rem;
@@ -98,6 +100,7 @@ p {
   font-size: 3.2rem;
   color: #0D47A1;
   font-weight: bold;
+  text-align: center;
 }
 
 .links {
