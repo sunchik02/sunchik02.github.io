@@ -1,0 +1,98 @@
+
+html {
+  font-size: 10px;
+}
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+
+/*header*/
+@media screen and (min-width: 560px) {
+  position: relative;
+  border: none;
+  margin-top: 1rem;
+}
+
+.name {
+  color: #0097A7;
+  font-size: 3.6rem;
+}
+.nav {
+  font-family: helvetica;
+  font-size: 1.4rem;
+}
+
+.description {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  margin-left: left;
+  margin-right: left;
+}
+
+
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.title {
+  color: #5C5C5C;
+  font-size: 2.2rem;
+}
+
+
+p {
+  font-size: 1.6rem;
+}
+
+.description {
+  font-family: 'Nunito', sans-serif;
+  color: #333333;
+  font-size: 1.8rem;
+}
+
+/*body*/
+.explore {
+  color: #0097A7;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.Cloud {
+  color: #0D47A1;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.me {
+  font-size: 2.2rem;
+  color: #0D47A1;
+  font-weight: bold;
+}
+
+/*footer*/
+.chat {
+  font-size: 3.2rem;
+  color: #0D47A1;
+  font-weight: bold;
+}
+
+.links {
+  color: #333333;
+  font-size: 1.5rem;
+}
