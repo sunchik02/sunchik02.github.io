@@ -25,25 +25,33 @@ body {
   color: #0097A7;
   font-size: 3.6rem;
 }
-.nav {
+ul {
   font-family: helvetica;
   font-size: 1.4rem;
 }
-
-.description {
+li {
+  float: left;
+}
+li a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #0D47A1;
+  padding-bottom: 30px;
+}
+.icons {
   box-sizing: border-box;
   display: inline-block;
-  width: 50%;
-  margin-left: left;
-  margin-right: left;
-}
-
-
+  text-align: left;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 a:link {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
