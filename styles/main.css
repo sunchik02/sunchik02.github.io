@@ -21,6 +21,7 @@ body {
   margin-top: 1rem;
 }
 */
+/* Top Nav/Header */
 .name {
   color: #0097A7;
   font-size: 5.6rem;
@@ -58,7 +59,7 @@ li a {
   padding-bottom: 30px;
   font-family: helvetica;
 }
-
+/* links */
 a:link {
   text-decoration: none;
 }
@@ -68,36 +69,37 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
-
+/* Icon description */
 .column_img {
   float: left;
   width: 10%;
   margin-left: 35%;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 .column_txt {
   float: left;
-  width: 25%;
+  width: 35%;
   font-size: 2.4rem;
   max-width: 80%;
   text-align: left;
   display: inline-block;
   margin-left: 1px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   font-family: 'Nunito';
-
 }
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
   margin: 1%;
-
 }
+.plane {
+  align-items: center;
+}
+/* DocuVAULT */
 .column_doc_img {
   float: left;
-  width: 15%;
+  max-width: 100%;
   margin-left: 1%;
 }
 .column_doc_txt {
@@ -129,6 +131,7 @@ h3.explore {
   font-size: 2.2rem;
   font-weight: bold;
   margin-top: 10px;
+  text-align: center;
 }
 h4.DocuVAULT {
   color: #0D47A1;
@@ -143,10 +146,12 @@ h4.DocuVAULT {
   padding-bottom: 20px;
   font-size: 1.8rem;
 }
-.Case-Study {
+p.case {
   font-size: 1.8rem;
-
+  color: #0D47A1;
+  font-family: "helvetica"
 }
+/* Me in a Minute */
 h4.me {
   font-size: 4.8rem;
   color: #0D47A1;
@@ -165,6 +170,10 @@ p.aboutmetext {
 }
 
 /*footer*/
+h3.connect {
+  text-align: center;
+  display: inline-block;
+}
 .chat {
   font-size: 3.2rem;
   color: #0D47A1;
@@ -179,21 +188,50 @@ p.aboutmetext {
   align-items: center;
   color: #333333;
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
+a.link:link {
+  padding: 0;
+}
+.linkedin{
+  padding-right: 5px;
+}
+.github {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.email{
+  padding-left: 5px;
+}
+a.git:link {
+  padding: 0;
+
+}
+a.mail:link {
+  padding: 0;
+}
 /*Projects*/
-.cloudtagline {
+.cloudtag {
   font-size: 3rem;
   font-family: "Roboto Condensed";
+  margin-bottom: 20px;
 }
 
 p.cloudtext {
   font-family: "Roboto";
+  text-align: center;
+  max-width: 50%;
 }
 
 .buttons {
   margin-bottom: 60px;
+}
+.cloud-head {
+  display: flex;
+  flex-wrap: wrap;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -228,7 +266,8 @@ h4.Prototype {
   width: 60%;
   display: inline-block;
 }
-figcaption {
+/* Role */
+.phonecap {
   text-align: left;
   margin-top: 45px;
   margin-bottom: 10px;
@@ -245,14 +284,15 @@ figcaption {
   margin-left: 15px;
   display: inline-block;
 }
+/* Process */
 h2.Process-header {
   color: #333333;
   font-family: "Nunito Sans";
   font-size: 3.8rem;
   font-weight: bold;
   margin-bottom: 30px;
-  display: inline-block;
 }
+/* competitive analysis */
 .competitors {
   align-items: center;
   padding-top: 50px;
@@ -260,40 +300,154 @@ h2.Process-header {
 .img-container {
   padding: 5px;
 }
-
+/* user research */
 p.fact {
   font-size: 2.0rem;
   color: #0097A7;
   font-weight: bold;
   line-height: 50px;
 }
-.flows {
+/* user flows */
+.flowcap {
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+.landing-container {
+  font-family: "helvetica";
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: 10px;
+}
+.organize-container {
+  font-family: "helvetica";
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 10px;
+}
+/* sketch/wireframes */
+.screen-container {
+  font-family: "helvetica";
+  font-size: 1.2rem;
   display: inline-block;
 }
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
+.joinus-container{
+  display: inline-block;
+  padding: 10px;
+}
+.create-container{
+  display: inline-block;
+  margin: 10px;
+}
+.dash-container{
+  display: inline-block;
+  margin: 10px;
+}
+.screencap {
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+h5.user-flows {
+  font-family: "helvetica";
+  font-size: 2.1rem;
+  margin-top: 20px;
+}
+
+/*Lofidelity*/
+.lofi-container {
+  font-family: "helvetica";
+  font-size: 1.2rem;
+  display: inline-block;
+}
+.dashboard-container{
+  display: inline-block;
+  padding: 10px;
+}
+.lofi1-container{
+  display: inline-block;
+  margin: 10px;
+}
+.lofi2-container{
+  display: inline-block;
+  margin: 10px;
+}
+.loficap {
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+
+
+/*branding*/
+.brand-container {
+  font-family: "helvetica";
+  font-size: 1.2rem;
+  display: inline-block;
+}
+.logo-container {
+  float: left;
+}
+.vision-container{
+  float: left;
+
+}
+.logocap {
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+.visioncap {
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+.vision {
+  display: inline-block;
+  padding-left: 10px;
+}
+.brand {
+  display: inline-block;
+  padding-left: 10px;
+}
+/*hifi*/
+
+.hifi-continer {
+  font-family: "helvetica";
+  font-size: 1.2rem;
+  display: inline-block;
+}
+.originalcap {
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+.revisedcap {
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+.original-container {
+  display: inline-block;
+  width: 60%;
+}
+.revised-container {
+  display: inline-block;
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.final{
+  margin-top: 50px;
 }
 h6 {
   font-family: "helvetica";
   margin-bottom: 10px;
   margin-top: 10px;
-  text-align: left;
+  text-align: center;
   max-width: 60%;
 }
 
-h5.user-flows {
-  font-family: "helvetica";
-  font-size: 2.1rem;
-}
-
-.cloud-head {
-  display: flex;
-  flex-wrap: wrap;
-  display: inline-block;
-  margin-bottom: 30px;
-}
 .color {
   background-color: #D9EFF2;
   width: 100%;
@@ -304,4 +458,8 @@ h5.user-flows {
     width: 100%;
     padding-bottom: 60px;
     padding-top: 80px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
