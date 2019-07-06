@@ -96,33 +96,24 @@ a:active {
 .plane {
   align-items: center;
 }
+
 /* DocuVAULT */
-.column_doc_img {
-  float: left;
-  max-width: 100%;
-  margin-left: 1%;
+.projectcontainer {
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  align-items: center;
 }
-.column_doc_txt {
-  float: left;
+.doc_img {
+  margin-left: auto;
+}
+.doc_txt {
   font-size: 2rem;
-  max-width: 25%;
-  text-align: center;
-  margin-left: 20%;
-  margin-top: 10%;
+  max-width: 35%;
   font-family: 'Nunito';
-
-}
-.row2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.description {
-  font-family: 'Nunito';
-  color: #333333;
-  font-size: 1.8rem;
+  border: 1px solid goldenrod;
+  margin-right: auto;
 }
 
 /*body*/
