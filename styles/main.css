@@ -352,20 +352,22 @@ h5.user-flows {
 .screen-container {
   font-family: "helvetica";
   font-size: 1.2rem;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  /* display: inline-block; */
   height: auto;
   width: 100%;
 }
 .joinus-container{
-  display: inline-block;
+  /* display: inline-block; */
   padding: 10px;
 }
 .create-container{
-  display: inline-block;
+  /* display: inline-block; */
   margin: 10px;
 }
 .dash-container{
-  display: inline-block;
+  /* display: inline-block; */
   margin: 10px;
 }
 .screencap {
@@ -384,18 +386,17 @@ h5.user-flows {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;
 }
 .dashboard-container{
   padding: 10px;
 }
 .lofi1-container{
   margin: 10px;
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 .lofi2-container{
  margin: 10px;
- padding-top: 60px;
+ /* padding-top: 60px; */
 }
 .loficap {
   text-align: left;
