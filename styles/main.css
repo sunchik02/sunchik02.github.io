@@ -201,29 +201,45 @@ a.mail:link {
   padding: 0;
 }
 /*Projects*/
-/*/mobile*//
-
+/*/mobile*/
 .cloud-head {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
-.column {
+.columntext {
   width: 50%;
-  border: 10px solid mistyrose;
+  display: inline-block;
+  margin-top: 30px;
+}
+.columnimg {
+  width: 50%;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
 
-/*desktop*/
-/* @media only screen and (min-width: 576px){
+@media only screen and (max-width: 576px){
   .cloud-head {
     display: flex;
     flex-wrap: wrap;
-    display: inline-block;
-    margin-bottom: 30px;
   }
-} */
+
+  .columntext {
+    display: block;
+    width: 100%;
+
+  }
+  .columnimg {
+    display: block;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 70px;
+  }
+}
+
+
 h2.cloudtag {
   font-size: 3rem;
   font-family: "Nunito Sans";
