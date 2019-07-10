@@ -11,6 +11,7 @@ html {
 
 body {
   text-align: center;
+  
 }
 
 
@@ -75,7 +76,7 @@ a:active {
   float: left;
   width: 10%;
   margin-left: 35%;
-  /*margin-top: 20px;*/
+
 }
 .column_txt {
   float: left;
@@ -227,9 +228,7 @@ a.mail:link {
   .cloud-head {
     display: flex;
     flex-wrap: wrap;
-
   }
-
   .columntext {
     width: 100%;
     margin-right: 35px;
@@ -249,17 +248,16 @@ a.mail:link {
   }
 }
 
-
 h2.cloudtag {
   font-size: 3rem;
   font-family: 'Nunito Sans',Arial,sans-serif;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 p.cloudtext {
   font-family: 'Nunito',Arial,sans-serif;
   text-align: center;
-  max-width: 50%;
 }
 h4.Prototype {
   color: #0D47A1;
@@ -268,8 +266,6 @@ h4.Prototype {
   padding-bottom: 15px;
   padding-top: 12px;
   font-family: 'Nunito Sans',Arial,sans-serif;
-  text-align: center;
-  width: 60%;
   display: inline-block;
 }
 
@@ -438,9 +434,9 @@ h5.user-flows {
 
 h6.loficap {
   margin-bottom: 10px;
-  width: 60%;
   font-family: "helvetica";
   font-size: 1.2rem;
+  text-align: left;
 }
 
 .dashboard-container{
@@ -547,22 +543,31 @@ p.keyfact {
 /*hifi*/
 
 .hifi-continer {
-  font-family: "helvetica";
   font-size: 1.2rem;
   display: inline-block;
 }
 .originalcap {
   text-align: left;
+  font-size: 1.2rem;
+  font-family: 'helvetica',Arial, sans-serif;
   margin-top: 45px;
   margin-bottom: 10px;
 }
 .revisedcap {
+  font-family: 'helvetica',Arial, sans-serif;
+  text-align: left;
+  font-size: 1.2rem;
   text-align: left;
   margin-top: 45px;
   margin-bottom: 10px;
 }
 
+/*desktop hifi*/
 @media only screen and (min-width: 575px){
+  .hifi-container {
+    text-align: center;
+
+  }
   #original-container {
     display: none;
   }
@@ -571,44 +576,35 @@ p.keyfact {
   }
   .original-container {
   display: inline-block;
-  width: 60%;
 }
 .revised-container {
   display: inline-block;
-  width: 60%;
-  margin-bottom: 30px;
+  margin: 0 auto;
+   margin-bottom: 30px;
 }
 }
+/*mobile hifi*/
 @media only screen and (max-width: 575px){
   #original-container {
     display: inline-block;
-
   }
   #revised-container {
     display: inline-block;
-
     margin-bottom: 30px;
   }
   .original-container {
     display: none;
-    width: 60%;
   }
   .revised-container {
     display: none;
-    width: 60%;
-    margin-bottom: 30px;
   }
 }
+
+/*conclusion*/
 .final{
   margin-top: 50px;
 }
-/* h6 {
-  font-family: "helvetica";
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-align: center;
-  max-width: 60%;
-} */
+
 
 
 /*styling*/
