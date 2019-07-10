@@ -11,17 +11,11 @@ html {
 
 body {
   text-align: center;
-  
+
 }
 
 
-/*main header*/
-/*@media screen and (min-width: 560px) {
-  position: relative;
-  border: none;
-  margin-top: 1rem;
-}
-*/
+
 /* Top Nav/Header */
 .name {
   color: #0097A7;
@@ -60,10 +54,10 @@ li a {
   padding-bottom: 30px;
   font-family: helvetica;
 }
+
 /* links */
 a:link {
   text-decoration: none;
-  color: #0D47A1;
 }
 a:hover {
   text-decoration: underline;
@@ -201,8 +195,11 @@ a.git:link {
 a.mail:link {
   padding: 0;
 }
+
+
 /*Projects*/
-/*/mobile*/
+
+/*Docuvault head*/
 .cloud-head {
   display: flex;
   flex-wrap: wrap;
@@ -222,7 +219,6 @@ a.mail:link {
   padding-bottom: 70px;
   padding-right: 60px;
 }
-
 
 @media only screen and (max-width: 576px){
   .cloud-head {
@@ -302,7 +298,7 @@ h4.Prototype {
   display: inline-block;
   margin-right: 30px;
 }
-/* Process */
+/* competitive analysis */
 h2.Process-header {
   color: #333333;
   font-family: 'Nunito Sans',Arial,sans-serif;
@@ -314,10 +310,9 @@ h2.Process-header {
 .competitors {
   align-items: center;
   padding-top: 50px;
-}
-.img-container {
   padding: 5px;
 }
+
 /* user research */
 p.fact {
   font-size: 2.0rem;
@@ -439,16 +434,20 @@ h6.loficap {
   text-align: left;
 }
 
-.dashboard-container{
+.dashboard-container {
   padding: 10px;
 }
-.lofi1-container{
+.lofi1-container {
   margin: 10px;
-  /* padding-top: 60px; */
 }
-.lofi2-container{
+.lofi2-container {
  margin: 10px;
- /* padding-top: 60px; */
+}
+p.keyfact {
+  font-size: 2.0rem;
+  color: #0097A7;
+  font-weight: bold;
+  margin-top: 15px;
 }
 /*lofi mobile screen*/
 @media only screen and (max-width: 575px){
@@ -487,7 +486,6 @@ h6.loficap {
     justify-content: center;
     width: 100%;
     height:auto;
-
   }
   .arrow1 {
     display: inline-block;
@@ -503,34 +501,30 @@ h6.loficap {
 }
 }
 
-p.keyfact {
-  font-size: 2.0rem;
-  color: #0097A7;
-  font-weight: bold;
-  margin-top: 15px;
-}
+
 /*branding*/
 .brand-container {
-  font-family: "helvetica";
-  font-size: 1.2rem;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
 }
-.logo-container {
-  float: left;
-}
-.vision-container{
-  float: left;
 
-}
 .logocap {
   text-align: left;
   margin-top: 45px;
   margin-bottom: 10px;
+  font-family: "helvetica";
+  font-size: 1.2rem;
 }
 .visioncap {
   text-align: left;
   margin-top: 45px;
   margin-bottom: 10px;
+  font-family: "helvetica";
+  font-size: 1.2rem;
 }
 .vision {
   display: inline-block;
@@ -540,7 +534,8 @@ p.keyfact {
   display: inline-block;
   padding-left: 10px;
 }
-/*hifi*/
+
+/*hifidelity*/
 
 .hifi-continer {
   font-size: 1.2rem;
@@ -667,5 +662,5 @@ p.paratext {
   line-height: 180%;
   text-align: left;
   font-family: 'Nunito',Arial,sans-serif;
-
+  }
 }
