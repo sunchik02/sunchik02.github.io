@@ -168,7 +168,7 @@ h3.connect {
   margin-top: 50px;
 }
 
-.links {
+.links a{
   align-items: center;
   color: #333333;
   font-size: 1.5rem;
@@ -362,6 +362,10 @@ h5.user-flows {
   width: 100%;
 }
 
+.googlelink a{
+  color: #0D47A1;
+}
+
 
 /*sketch mobile screen*/
 
@@ -547,6 +551,7 @@ p.keyfact {
   font-family: 'helvetica',Arial, sans-serif;
   margin-top: 45px;
   margin-bottom: 10px;
+    color: #333333;
 }
 .revisedcap {
   font-family: 'helvetica',Arial, sans-serif;
@@ -554,7 +559,8 @@ p.keyfact {
   font-size: 1.2rem;
   text-align: left;
   margin-top: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  color: #333333;
 }
 
 /*desktop hifi*/
@@ -571,11 +577,12 @@ p.keyfact {
   }
   .original-container {
   display: inline-block;
+  margin-right: 5px;
 }
 .revised-container {
   display: inline-block;
-  margin: 0 auto;
-   margin-bottom: 30px;
+  margin-bottom: 30px;
+  margin-left: 5px;
 }
 }
 /*mobile hifi*/
@@ -651,6 +658,9 @@ p {
   }
 }
   /*aboutme*/
+.meimg {
+  padding-bottom: 30px;
+}
   @media only screen and (max-width: 575px) {
   .meimg {
     margin: 30px;
