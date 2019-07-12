@@ -24,6 +24,8 @@ body {
   font-style: normal;
   font-weight: bold;
   margin-top: 56px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .title {
   font-family: 'Nunito Sans',Arial,sans-serif;
@@ -91,7 +93,10 @@ a:active {
 }
 .plane {
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 
 /* DocuVAULT */
 .projectcontainer {
@@ -295,8 +300,9 @@ h4.Prototype {
   font-family: "helvetica";
   font-size: 1.2rem;
   margin-left: 15px;
-  display: inline-block;
   margin-right: 30px;
+  display: inline-block;
+
 }
 /* competitive analysis */
 h2.Process-header {
