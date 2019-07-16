@@ -70,32 +70,83 @@ a:active {
 /* Icon description */
 .column_img {
   float: left;
-  width: 10%;
-  margin-left: 33%;
-
+  width: 5%;
+  margin-left: 40%;
 }
+
 .column_txt {
   float: left;
   width: 43%;
   font-size: 2.4rem;
-  /* max-width: 80%; */
   text-align: left;
-  display: inline-block;
-  margin-left: 5px;
-  /*margin-top: 20px;*/
   font-family: 'Nunito',Arial,sans-serif;
 }
+
 .row:after {
   content: "";
   display: table;
   clear: both;
   margin: 1%;
 }
+.row {
+  display: block;
+}
+
 .plane {
   align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  .column_img {
+    float: left;
+    width: 5%;
+    margin-right: 10px;
+    margin-left: 37%;
+  }
+
+  .column_txt {
+    float: left;
+    width: 50%;
+    font-size: 2.4rem;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column_img {
+    float: left;
+    width: 5%;
+    margin-right: 10px;
+    margin-left: 33%;
+  }
+
+  .column_txt {
+    float: left;
+    width: 50%;
+    font-size: 2.4rem;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .column_img {
+    float: left;
+    width: 5%;
+    margin-left: 18%;
+  }
+
+  .column_txt {
+    float: left;
+    width: 70%;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Nunito',Arial,sans-serif;
+  }
+}
+
+
 
 
 /* DocuVAULT */
@@ -107,12 +158,17 @@ a:active {
   align-items: center;
 }
 
-.doc_txt {
+p.case {
+  text-align: center;
+}
+
+p.docutext {
+  text-align: center;
   font-size: 2rem;
   max-width: 400px;
   font-family: 'Nunito',Arial,sans-serif;
-
 }
+
 
 /*body*/
 h3.explore {
@@ -312,11 +368,13 @@ h2.Process-header {
   font-size: 3.8rem;
   font-weight: bold;
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 /* competitive analysis */
 .competitors {
   align-items: center;
-  padding-top: 50px;
+  margin-top: 30px;
   padding: 5px;
 }
 
@@ -344,13 +402,17 @@ p.fact {
   font-family: "helvetica";
   font-size: 1.2rem;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .organize-container {
   font-family: "helvetica";
   font-size: 1.2rem;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 h5.user-flows {
   font-family: "helvetica";
@@ -451,9 +513,12 @@ h6.loficap {
 }
 .lofi1-container {
   margin: 10px;
+  display: flex;
+
 }
 .lofi2-container {
  margin: 10px;
+ display: flex;
 }
 p.keyfact {
   font-size: 2.0rem;
@@ -461,34 +526,10 @@ p.keyfact {
   font-weight: bold;
   margin-top: 15px;
 }
-/*lofi mobile screen*/
-@media only screen and (max-width: 575px){
-  .lofi-container {
-    font-family: "helvetica";
-    font-size: 1.2rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height:auto;
-  }
-  .arrow1 {
-  display: none;
-}
-.arrow2 {
-  display: none;
-}
-#arrow1 {
-  display: inline-block;
-  margin: 10px;
-}
-#arrow2 {
-  display: inline-block;
-  margin: 10px;
-}
-}
+
+
 /*lofi desktop screen*/
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 780px){
   .lofi-container {
     font-family: "helvetica";
     font-size: 1.2rem;
@@ -498,6 +539,15 @@ p.keyfact {
     justify-content: center;
     width: 100%;
     height:auto;
+  }
+  #dashboard {
+    display: none;
+  }
+  #lofi1-container {
+    display: none;
+  }
+  #lofi2-container {
+    display: none;
   }
   .arrow1 {
     display: inline-block;
@@ -510,6 +560,90 @@ p.keyfact {
   }
 #arrow2 {
   display: none;
+}
+}
+
+/*ipad screen*/
+@media only screen and (max-width: 780px){
+  .lofi-container {
+    font-family: "helvetica";
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:auto;
+  }
+  .dashboard {
+    display: none;
+  }
+  .lofi1-container {
+    display: none;
+  }
+  .lofi2-container {
+    display: none;
+  }
+  .arrow1 {
+    display: inline-block;
+    justify-content: center;
+    align-items:center;
+  }
+  .arrow2 {
+    display: inline-block;
+    justify-content: center;
+    align-items:center;
+
+  }
+  #arrow1 {
+    display: none;
+  }
+#arrow2 {
+  display: none;
+}
+}
+/*lofi mobile screen*/
+@media only screen and (max-width: 630px){
+  .lofi-container {
+    font-family: "helvetica";
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:auto;
+  }
+  #dashboard {
+    display: none;
+  }
+  #lofi1-container {
+    display: none;
+  }
+  #lofi2-container {
+    display: none;
+  }
+  .dashboard {
+    display: block;
+  }
+  .lofi1-container {
+    display: block;
+  }
+  .lofi2-container {
+    display: block;
+  }
+  .arrow1 {
+    display: none;
+  }
+  .arrow2 {
+    display: none;
+  }
+  #arrow1 {
+    display: block;
+    margin: 10px;
+  }
+  #arrow2 {
+    display: block;
+    margin: 10px;
 }
 }
 
@@ -540,11 +674,15 @@ p.keyfact {
 }
 .vision {
   display: inline-block;
-  padding-left: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 .brand {
   display: inline-block;
-  padding-left: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 
 /*hifidelity*/
@@ -563,7 +701,6 @@ p.keyfact {
 }
 .revisedcap {
   font-family: 'helvetica',Arial, sans-serif;
-  text-align: left;
   font-size: 1.2rem;
   text-align: left;
   margin-top: 45px;
@@ -613,6 +750,8 @@ p.keyfact {
 /*conclusion*/
 .final{
   margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 
@@ -640,16 +779,16 @@ h3 {
   padding-bottom: 20px;
   padding-top: 12px;
   font-family: 'Nunito Sans',Arial,sans-serif;
-  /* text-align: left; */
-  width: 70%;
-  /* display: flex; */
+  text-align: left;
+  width: 75%;
+  display: inline-block;
 }
 
 p {
   font-family: 'Nunito',Arial,sans-serif;
   font-size: 2rem;
   line-height: 160%;
-  width: 60%;
+  width: 75%;
   text-align: left;
   color: #333333;
   display: inline-block;
@@ -657,19 +796,39 @@ p {
 @media only screen and (max-width: 575px) {
   p {
     font-family: 'Nunito',Arial,sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 160%;
-    width: 80%;
     text-align: left;
     color: #333333;
     display: inline-block;
   }
+  h2.Process-header {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  .name {
+    font-size: 4.6rem;
+  }
+  .title {
+    font-size: 2.8rem;
+  }
+  /* li a {
+    font-size: 1.8rem;
+  } */
 }
+
+
+
+
   /*aboutme*/
 .meimg {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+
 }
-  @media only screen and (max-width: 575px) {
+
+@media only screen and (max-width: 575px) {
   .meimg {
     margin: 30px;
   }
@@ -680,5 +839,6 @@ p.paratext {
   line-height: 180%;
   text-align: left;
   font-family: 'Nunito',Arial,sans-serif;
+  width: 80%;
   }
 }
