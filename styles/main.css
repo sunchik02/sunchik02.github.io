@@ -5,12 +5,17 @@ html {
   font-size: 10px;
 }
 .container {
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+
+  background-image: url("/images/tinypng/fly2.svg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+
+  }
 
 body {
   text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
 
 }
 
@@ -68,15 +73,21 @@ a:active {
   text-decoration: underline;
 }
 /* Icon description */
+p.about {
+  font-size: 3rem;
+  line-height: 200%;
+  width: auto;
+}
+
 .column_img {
   float: left;
   width: 5%;
-  margin-left: 40%;
+  margin-left: 38%;
 }
 
 .column_txt {
   float: left;
-  width: 43%;
+  width: 35%;
   font-size: 2.4rem;
   text-align: left;
   font-family: 'Nunito',Arial,sans-serif;
@@ -98,6 +109,7 @@ a:active {
   margin-right: 20px;
 }
 
+/*ipad horizontal*/
 @media screen and (max-width: 1024px) {
   .column_img {
     float: left;
@@ -114,6 +126,7 @@ a:active {
   }
 }
 
+/*ipad*/
 @media screen and (max-width: 768px) {
   .column_img {
     float: left;
@@ -128,8 +141,17 @@ a:active {
     font-size: 2.4rem;
     text-align: left;
   }
+  p.about {
+    font-family: 'Nunito',Arial,sans-serif;
+    font-size: 2.5rem;
+    line-height: 150%;
+    text-align: left;
+    color: #333333;
+    display: inline-block;
+    width: auto;
+  }
 }
-
+/*mobile*/
 @media screen and (max-width: 576px) {
   .column_img {
     float: left;
@@ -144,33 +166,20 @@ a:active {
     text-align: left;
     font-family: 'Nunito',Arial,sans-serif;
   }
-}
+  p.about {
+    font-family: 'Nunito',Arial,sans-serif;
+    font-size: 2rem;
+    line-height: 150%;
+    text-align: left;
+    color: #333333;
+    display: inline-block;
+    width: auto;
+  }
+  }
 
 
 
 
-/* DocuVAULT */
-.projectcontainer {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-p.case {
-  text-align: center;
-}
-
-p.docutext {
-  text-align: center;
-  font-size: 2rem;
-  max-width: 400px;
-  font-family: 'Nunito',Arial,sans-serif;
-}
-
-
-/*body*/
 h3.explore {
   color: #0097A7;
   font-size: 2.2rem;
@@ -179,6 +188,11 @@ h3.explore {
   text-align: center;
   margin: 0 auto;
 }
+/* DocuVAULT */
+
+
+
+/*body*/
 h4.DocuVAULT {
   color: #0D47A1;
   font-weight: bold;
@@ -187,16 +201,23 @@ h4.DocuVAULT {
   font-family: 'Nunito Sans',Arial,sans-serif;
   margin-bottom: 30px;
 }
-.DocuVAULT-text {
-  float: left;
-  padding-bottom: 20px;
-  font-size: 1.8rem;
+.projectcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
-p.case {
-  font-size: 1.8rem;
-  color: #0D47A1;
-  font-family: "helvetica"
+
+p.docutext {
+  text-align: center;
+  font-size: 2rem;
+  max-width: 500px;
+  font-family: 'Nunito',Arial,sans-serif;
+  margin-bottom: 10px;
 }
+
+
 /* Me in a Minute */
 h4.me {
   font-size: 4.8rem;
@@ -316,19 +337,12 @@ h2.cloudtag {
 p.cloudtext {
   font-family: 'Nunito',Arial,sans-serif;
   text-align: center;
-}
-h4.Prototype {
-  color: #0D47A1;
-  font-size: 2.4rem;
-  font-weight: bold;
-  padding-bottom: 15px;
-  padding-top: 12px;
-  font-family: 'Nunito Sans',Arial,sans-serif;
-  display: inline-block;
+  margin-bottom: 20px;
 }
 
+
 .buttons {
-  margin-bottom: 60px;
+  margin: 10px;
 }
 
 
@@ -376,6 +390,7 @@ h2.Process-header {
   align-items: center;
   margin-top: 30px;
   padding: 5px;
+  margin-bottom: 20px;
 }
 
 /* user research */
@@ -384,6 +399,54 @@ p.fact {
   color: #0097A7;
   font-weight: bold;
   line-height: 50px;
+}
+.survey-button {
+  margin-top: 20px;
+}
+
+/*personas*/
+.persona-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+p.personafact {
+  font-size: 2.0rem;
+  color: #0097A7;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  width: 20%;
+}
+
+.Kara {
+  font-family: "helvetica";
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.Patty {
+  font-family: "helvetica";
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.personacap {
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+  p.personafact {
+    margin-top: 30px;
+    width: 100%;
+  }
 }
 /* user flows */
 .flowcap {
@@ -431,8 +494,8 @@ h5.user-flows {
   width: 100%;
 }
 
-.googlelink a{
-  color: #0D47A1;
+.googlelink {
+  margin-top: 20px;
 }
 
 
@@ -475,6 +538,7 @@ h5.user-flows {
     margin-top: 45px;
     margin-bottom: 10px;
   }
+
   #joinus-container {
     display: none;
   }
@@ -658,32 +722,19 @@ p.keyfact {
   margin: 10px;
 }
 
-.logocap {
+.brandcap {
   text-align: left;
   margin-top: 45px;
   margin-bottom: 10px;
   font-family: "helvetica";
   font-size: 1.2rem;
-}
-.visioncap {
-  text-align: left;
-  margin-top: 45px;
-  margin-bottom: 10px;
-  font-family: "helvetica";
-  font-size: 1.2rem;
-}
-.vision {
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-
 }
 .brand {
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
-
 }
+
 
 /*hifidelity*/
 
@@ -780,15 +831,15 @@ h3 {
   padding-top: 12px;
   font-family: 'Nunito Sans',Arial,sans-serif;
   text-align: left;
-  width: 75%;
+  width: 65%;
   display: inline-block;
 }
 
 p {
   font-family: 'Nunito',Arial,sans-serif;
   font-size: 2rem;
-  line-height: 160%;
-  width: 75%;
+  line-height: 200%;
+  width: 65%;
   text-align: left;
   color: #333333;
   display: inline-block;
@@ -797,7 +848,7 @@ p {
   p {
     font-family: 'Nunito',Arial,sans-serif;
     font-size: 1.8rem;
-    line-height: 160%;
+    line-height: 180%;
     text-align: left;
     color: #333333;
     display: inline-block;
@@ -825,7 +876,9 @@ p {
   /*aboutme*/
 .meimg {
   margin-bottom: 30px;
-
+}
+.paratext {
+  width: 60%;
 }
 
 @media only screen and (max-width: 575px) {
@@ -839,6 +892,6 @@ p.paratext {
   line-height: 180%;
   text-align: left;
   font-family: 'Nunito',Arial,sans-serif;
-  width: 80%;
+  width: 60%;
   }
 }
