@@ -16,8 +16,10 @@ body {
 
 /* Top Nav/Header */
 .container {
-  align-items: center;
   margin-top: 56px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .plane {
   margin-right: 10px;
@@ -28,7 +30,6 @@ h1.name {
   font-family: 'Nunito Sans',Arial,sans-serif;
   font-style: normal;
   font-weight: bold;
-  margin-top: 56px;
   margin-left: 5px;
   margin-right: 5px;
   display: inline;
@@ -88,7 +89,7 @@ p.about {
 .column_img {
   float: left;
   width: 5%;
-  margin-left: 38%;
+  margin-left: 40%;
 }
 
 .column_txt {
@@ -411,11 +412,17 @@ h2.Process-header {
 }
 
 /* user research */
-p.fact {
-  font-size: 2.0rem;
-  color: #0097A7;
-  font-weight: bold;
-  line-height: 50px;
+
+.factone {
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+.facttwo {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .survey-button {
   margin-top: 20px;
