@@ -4,25 +4,25 @@
 html {
   font-size: 10px;
 }
-.container {
 
-  background-image: url("/images/tinypng/fly2.svg");
-  background-repeat: no-repeat;
-  background-origin: content-box;
 
-  }
 
 body {
   text-align: center;
   margin: 0 auto;
   box-sizing: border-box;
-
 }
 
 
-
 /* Top Nav/Header */
-.name {
+.container {
+  align-items: center;
+  margin-top: 56px;
+}
+.plane {
+  margin-right: 10px;
+}
+h1.name {
   color: #0097A7;
   font-size: 5.6rem;
   font-family: 'Nunito Sans',Arial,sans-serif;
@@ -31,13 +31,19 @@ body {
   margin-top: 56px;
   margin-left: 5px;
   margin-right: 5px;
+  display: inline;
 }
-.title {
+h2.title {
   font-family: 'Nunito Sans',Arial,sans-serif;
   color: #5C5C5C;
   font-size: 3.2rem;
   margin-top: 10px;
+}
 
+@media screen and (max-width: 1024px) {
+  h1.name {
+  font-size:
+  }
 }
 nav {
   width: 100%;
@@ -103,11 +109,7 @@ p.about {
   display: block;
 }
 
-.plane {
-  align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+
 
 /*ipad horizontal*/
 @media screen and (max-width: 1024px) {
@@ -178,28 +180,45 @@ p.about {
   }
 
 
+.direction {
+display: block;
+width: 100%;
 
-
-h3.explore {
+}
+.direct {
+  text-align: center;
+  margin-top: 30px;
+}
+.line {
+  margin-bottom: 300px;
+}
+h3 a{
   color: #0097A7;
-  font-size: 2.2rem;
+  font-size: 3rem;
   font-weight: bold;
-  margin-top: 10px;
   text-align: center;
   margin: 0 auto;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 400px;
 }
 /* DocuVAULT */
 
 
 
 /*body*/
-h4.DocuVAULT {
+
+h3.fas fa-map-marker-alt fa {
+  text-align: center;
+}
+h4#DocuVAULT {
   color: #0D47A1;
   font-weight: bold;
   font-size: 4.8rem;
   text-align: center;
   font-family: 'Nunito Sans',Arial,sans-serif;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 .projectcontainer {
   display: flex;
@@ -339,8 +358,6 @@ p.cloudtext {
   text-align: center;
   margin-bottom: 20px;
 }
-
-
 .buttons {
   margin: 10px;
 }
@@ -859,10 +876,10 @@ p {
   h3 {
     font-size: 2.2rem;
   }
-  .name {
-    font-size: 4.6rem;
+  h1.name {
+    font-size: 3.8rem;
   }
-  .title {
+  h2.title {
     font-size: 2.8rem;
   }
   /* li a {
@@ -879,6 +896,7 @@ p {
 }
 .paratext {
   width: 60%;
+
 }
 
 @media only screen and (max-width: 575px) {
