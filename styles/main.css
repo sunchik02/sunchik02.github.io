@@ -3,6 +3,7 @@
 }
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 
@@ -90,6 +91,7 @@ p.about {
   float: left;
   width: 5%;
   margin-left: 40%;
+  padding-top: 10px;
 }
 
 .column_txt {
@@ -110,7 +112,9 @@ p.about {
   display: block;
 }
 
-
+.hero {
+  padding-top: 100px;
+}
 
 /*ipad horizontal*/
 @media screen and (max-width: 1024px) {
@@ -212,6 +216,7 @@ h3 a{
 h3.fas fa-map-marker-alt fa {
   text-align: center;
 }
+
 h4#DocuVAULT {
   color: #0D47A1;
   font-weight: bold;
@@ -236,7 +241,66 @@ p.docutext {
   font-family: 'Nunito',Arial,sans-serif;
   margin-bottom: 10px;
 }
+/*buttons*/
+a.button {
+font-family:'Nunito',Arial,sans-serif;
+text-align: center;
+line-height: 50px;
+font-size: 1.8rem;
+width: 180px;
+padding: 10px;
+}
+a.primary {
+  position: relative;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+a.secondary {
+  position: relative;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  color: #0D47A1;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.btnBlueGreen {
+  background: #0097A7;
+}
+.btnBlueGreen.btnBorder {
+  box-shadow: 0px 0px 0px 0px #00717D;
+}
 
+.btnBlueGreen.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #00717D;
+}
+
+.btnWhiteGreen {
+  background: #FFF;
+}
+.btnWhiteGreen.btnBorder {
+  box-shadow: 1px 1px 1px 1px #0097A7;
+}
+
+.btnWhiteGreen.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #0097A7;
+}
+
+@media only screen and (max-width: 769px){
+  a.button {
+  line-height: 50px;
+  font-size: 1.6rem;
+  padding: 10px;
+  }
+  a.primary {
+    margin: 0 auto;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.2s;
+  }
+}
 
 /* Me in a Minute */
 h4.me {
@@ -427,6 +491,21 @@ h2.Process-header {
 .survey-button {
   margin-top: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .factone {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+  }
+  .facttwo {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 10;
+    margin-right: 10px
+  }
+}
 
 /*personas*/
 .persona-container {
@@ -435,6 +514,8 @@ h2.Process-header {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 p.personafact {
   font-size: 2.0rem;
@@ -444,6 +525,7 @@ p.personafact {
   text-align: center;
   width: 20%;
 }
+
 
 .Kara {
   font-family: "helvetica";
@@ -744,6 +826,8 @@ p.keyfact {
   align-items: center;
   text-align: center;
   margin: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .brandcap {
@@ -752,6 +836,7 @@ p.keyfact {
   margin-bottom: 10px;
   font-family: "helvetica";
   font-size: 1.2rem;
+
 }
 .brand {
   display: inline-block;
