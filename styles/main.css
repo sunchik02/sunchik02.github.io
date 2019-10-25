@@ -26,9 +26,9 @@ body {
   margin-right: 10px;
 }
 h1.name {
-  color: #0097A7;
+  color: #474747;
   font-size: 5.6rem;
-  font-family: 'Nunito Sans',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   font-style: normal;
   font-weight: bold;
   margin-left: 5px;
@@ -36,7 +36,7 @@ h1.name {
   display: inline;
 }
 h2.title {
-  font-family: 'Nunito Sans',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   color: #5C5C5C;
   font-size: 3.2rem;
   margin-top: 10px;
@@ -65,7 +65,7 @@ li a {
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  color: #0D47A1;
+  color: #01A7B9;
   padding-bottom: 30px;
   font-family: helvetica;
 }
@@ -99,7 +99,7 @@ p.about {
   width: 35%;
   font-size: 2.4rem;
   text-align: left;
-  font-family: 'Nunito',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
 }
 
 .row:after {
@@ -149,7 +149,7 @@ p.about {
     text-align: left;
   }
   p.about {
-    font-family: 'Nunito',Arial,sans-serif;
+    font-family: 'Open Sans',Arial,sans-serif;
     font-size: 2.5rem;
     line-height: 150%;
     text-align: left;
@@ -171,10 +171,10 @@ p.about {
     width: 70%;
     font-size: 2rem;
     text-align: left;
-    font-family: 'Nunito',Arial,sans-serif;
+    font-family: 'Open Sans',Arial,sans-serif;
   }
   p.about {
-    font-family: 'Nunito',Arial,sans-serif;
+    font-family: 'Open Sans',Arial,sans-serif;
     font-size: 2rem;
     line-height: 150%;
     text-align: left;
@@ -198,7 +198,7 @@ width: 100%;
   margin-bottom: 300px;
 }
 h3 a{
-  color: #0097A7;
+  color: #01A7B9;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
@@ -218,14 +218,25 @@ h3.fas fa-map-marker-alt fa {
 }
 
 h4#DocuVAULT {
-  color: #0D47A1;
+  color: #01A7B9;
   font-weight: bold;
   font-size: 4.8rem;
   text-align: center;
-  font-family: 'Nunito Sans',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   margin-bottom: 30px;
   text-decoration: none;
 }
+h4#Cookem {
+  color: #01A7B9;
+  font-weight: bold;
+  font-size: 4.8rem;
+  text-align: center;
+  font-family: 'Open Sans',Arial,sans-serif;
+  margin-bottom: 30px;
+  text-decoration: none;
+  padding-top: 100px;
+}
+
 .projectcontainer {
   display: flex;
   flex-wrap: wrap;
@@ -233,17 +244,26 @@ h4#DocuVAULT {
   justify-content: center;
   align-items: center;
 }
+.cookemcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 20px;
+}
 
 p.docutext {
   text-align: center;
   font-size: 2rem;
   max-width: 500px;
-  font-family: 'Nunito',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   margin-bottom: 10px;
 }
 /*buttons*/
 a.button {
-font-family:'Nunito',Arial,sans-serif;
+font-family:'Open Sans',Arial,sans-serif;
 text-align: center;
 line-height: 50px;
 font-size: 1.8rem;
@@ -267,7 +287,7 @@ a.secondary {
   transition: all 0.2s;
 }
 .btnBlueGreen {
-  background: #0097A7;
+  background: #01A7B9;
 }
 .btnBlueGreen.btnBorder {
   box-shadow: 0px 0px 0px 0px #00717D;
@@ -281,11 +301,11 @@ a.secondary {
   background: #FFF;
 }
 .btnWhiteGreen.btnBorder {
-  box-shadow: 1px 1px 1px 1px #0097A7;
+  box-shadow: 1px 1px 1px 1px #01A7B9;
 }
 
 .btnWhiteGreen.btnBorder:hover {
-  box-shadow: 0px 0px 0px 5px #0097A7;
+  box-shadow: 0px 0px 0px 5px #01A7B9;
 }
 
 @media only screen and (max-width: 769px){
@@ -308,7 +328,7 @@ h4.me {
   color: #0D47A1;
   font-weight: bold;
   padding-top: 10%;
-  font-family: 'Nunito Sans',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
 }
 p.aboutmetext {
   display: inline-block;
@@ -317,7 +337,7 @@ p.aboutmetext {
   font-size: 2rem;
   line-height: 180%;
   text-align: center;
-  font-family: 'Nunito',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
 }
 
 /*footer*/
@@ -327,11 +347,11 @@ h3.connect {
 }
 .chat {
   font-size: 3.2rem;
-  color: #0D47A1;
+  color: #01A7B9;
   font-weight: bold;
   text-align: center;
   width: 100%;
-  font-family: 'Nunito Sans',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   margin-top: 50px;
 }
 
@@ -413,13 +433,13 @@ a.mail:link {
 
 h2.cloudtag {
   font-size: 3rem;
-  font-family: 'Nunito Sans',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   margin-bottom: 20px;
   text-align: center;
 }
 
 p.cloudtext {
-  font-family: 'Nunito',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -460,7 +480,7 @@ p.cloudtext {
 /* competitive analysis */
 h2.Process-header {
   color: #333333;
-  font-family: 'Nunito Sans',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   font-size: 3.8rem;
   font-weight: bold;
   margin-bottom: 30px;
@@ -519,7 +539,7 @@ h2.Process-header {
 }
 p.personafact {
   font-size: 2.0rem;
-  color: #0097A7;
+  color: #01A7B9;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
@@ -692,7 +712,7 @@ h6.loficap {
 }
 p.keyfact {
   font-size: 2.0rem;
-  color: #0097A7;
+  color: #01A7B9;
   font-weight: bold;
   margin-top: 15px;
 }
@@ -918,7 +938,7 @@ p.keyfact {
 
 /*styling*/
 .color {
-  background-color: #D9EFF2;
+  background-color: #E6F6F8;
   width: 100%;
   padding-bottom: 60px;
   padding-top: 80px;
@@ -933,19 +953,19 @@ img {
   height: auto;
 }
 h3 {
-  color: #0D47A1;
+  color: #01A7B9;
   font-size: 2.4rem;
   font-weight: bold;
   padding-bottom: 20px;
   padding-top: 12px;
-  font-family: 'Nunito Sans',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   text-align: left;
   width: 65%;
   display: inline-block;
 }
 
 p {
-  font-family: 'Nunito',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   font-size: 2rem;
   line-height: 200%;
   width: 65%;
@@ -955,7 +975,7 @@ p {
 }
 @media only screen and (max-width: 575px) {
   p {
-    font-family: 'Nunito',Arial,sans-serif;
+    font-family: 'Open Sans',Arial,sans-serif;
     font-size: 1.8rem;
     line-height: 180%;
     text-align: left;
@@ -979,6 +999,23 @@ p {
   } */
 }
 
+/*solo project*/
+h2.cookemtag {
+  font-size: 3rem;
+  font-family: 'Open Sans',Arial,sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cookemcompetitors {
+  align-items: center;
+  margin-top: 30px;
+  padding: 5px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 
 
@@ -1001,7 +1038,7 @@ p.paratext {
   font-size: 2rem;
   line-height: 180%;
   text-align: left;
-  font-family: 'Nunito',Arial,sans-serif;
+  font-family: 'Open Sans',Arial,sans-serif;
   width: 60%;
   }
 }
